@@ -18,7 +18,7 @@ public class Pessoa{
         imprimirDados(); // chamando o método
     }
 
-    private void imprimirDados() {
+    public void imprimirDados() {
         System.out.format("Nome: %s, Idade: %d e %.2fm \n", nome, idade, altura);
     }
 

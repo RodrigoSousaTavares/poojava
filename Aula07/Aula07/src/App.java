@@ -1,12 +1,14 @@
+import javax.swing.JOptionPane;
+
+import classes.Personagem;
 import classes.Pessoa;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Pessoa pessoa = new Pessoa("Vagner", 31, 1.78f);
+        String nome = JOptionPane.showInputDialog(null, "Nome do personagem: ");
+        String classe = JOptionPane.showInputDialog(null, "Classe do personagem: ");
 
-        /*ystem.out.format("Nome: %s, Idade: %d e %.2fm",
-        pessoa.getNome(),
-          pessoa.getIdade(),
-           pessoa.getAltura());*/
+        Personagem personagem = new Personagem(nome, classe);
+        personagem.mostrarStatus();
     }
 }
